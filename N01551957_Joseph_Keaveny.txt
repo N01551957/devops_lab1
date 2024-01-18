@@ -1,3 +1,6 @@
 lab 1
 my name is Joseph and I am 
 a cloud Computing Student
+
+My name is Daman.
+Adding changes.
