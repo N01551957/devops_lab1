@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+RUN apt update -y && apt upgrade -y
+MAINTAINER josephkeav95@hotmail.com
+ENV text="DevOps Lab"
+CMD ["echo", "you are doing $text"] 

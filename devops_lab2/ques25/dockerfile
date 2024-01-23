@@ -1,0 +1,7 @@
+FROM ubuntu:latest
+RUN apt-get update && apt-get install -y apache2 curl
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+EXPOSE 80
+HEALTHCHECK CMD curl -f http://localhost/ || exit 1
+CMD /usr/sbin/apache2ctl -D FOREGROUND
+
