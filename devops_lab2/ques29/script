@@ -1,0 +1,7 @@
+#! /bin/bash
+echo hello
+docker login
+echo using my credentials in credentials manager
+docker build -t n01551957/basic-service .
+docker push n01551957/basic-service:latest
+echo sent to dockerhub

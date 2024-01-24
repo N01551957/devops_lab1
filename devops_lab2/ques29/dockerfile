@@ -1,0 +1,3 @@
+FROM ubuntu:latest
+RUN echo this is a basic service
+
